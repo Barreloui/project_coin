@@ -1,0 +1,75 @@
+.we {
+    font-size: large;
+    display:block;
+    float: left;
+    position: relative;
+    left: 25px;
+    font-size: larger;
+}
+.logo_head {
+   display: block;
+    float: right;
+    position: relative;
+    right: 200px;
+    top:-25px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+
+}
+.tr1 {
+    display: block;
+    position: relative;
+    top:30px;
+
+}
+.tr2 {
+    display: block;
+    float: right;
+    position: relative;
+    top: -360px;
+    right: 50px;
+}
+.tr3 {
+    display: block;
+    float: right;
+    position: relative;
+    top: 30px;
+    left: -82px;
+
+}
+.tr4 {
+    display: block;
+    float: right;
+    position: relative;
+    right: -530px;
+    top:-125px;
+}
+.curs {
+    display: block;
+    float: right;
+    position: relative;
+    right:370px;
+    top:-100px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+.hadd {
+    display: block;
+    float: left;
+    position: relative;
+    left:550px;
+    top: -80px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+.tr5 {
+    display: block;
+    position: relative;
+    top:600px;
+}
+.tr6 {
+    display: block;
+    position: relative;
+    top:700px;
+}

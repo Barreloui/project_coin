@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>poject_coin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="script" href="script.js">
+
+</head>
+<body>
+
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+            {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+            },
+            {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "NASDAQ 100"
+            },
+            {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+            },
+            {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "BTC/USD"
+            },
+            {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "ETH/USD"
+            }
+        ],
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "ru"
+        }
+    </script>
+</div>
+
+<style>
+    li {
+        display: inline-block; /* Строчно-блочные элементы */
+        background: deepskyblue; /* Цвет фона */
+        margin-right: 5px; /* Расстояние между пунктами меню */
+        -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+        -moz-transform: skewX(-30deg); /* Для Firefox */
+        -o-transform: skewX(-30deg); /* Для Opera */
+        -ms-transform: skewX(-30deg); /* Для IE */
+        transform: skewX(-30deg); /* CSS3 */
+    }
+    a {
+        color: #fff; /* Цвет ссылок */
+        display: block; /* Блочный элемент */
+        padding: 15px 69px; /* Поля вокруг текста */
+        text-decoration: none; /* Убираем подчёркивание */
+        -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+        -moz-transform: skewX(30deg); /* Для Firefox */
+        -o-transform: skewX(30deg); /* Для Opera */
+        -ms-transform: skewX(30deg); /* Для IE */
+        transform: skewX(30deg); /* CSS3 */
+
+    }
+    li:hover {
+        background: dodgerblue; /* Цвет фона при наведении курсора мыши */
+    }
+
+</style>
+</head>
+<body>
+<div class="we">
+<ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="Kursy%20valyut.html">Курсы банков</a></li>
+    <li id="m1"><a href="#curs_val">Курсы валют</a></li>
+
+
+
+</ul>
+</div>
+<ul>
+    <div class="logo_head">
+        <p>Finance Site</p>
+        <p>project_coin</p>
+    </div>
+
+    <div class="tr1">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+            {
+                "width": 770,
+                "height": 400,
+                "currencies": [
+                "EUR",
+                "USD",
+                "JPY",
+                "GBP",
+                "CHF",
+                "AUD",
+                "NZD",
+                "CNY"
+            ],
+                "isTransparent": false,
+                "colorTheme": "dark",
+                "locale": "ru"
+            }
+        </script>
+    </div>
+
+    <div class="tr2">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/stocks-usa/market-movers-gainers/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+            {
+                "colorTheme": "dark",
+                "dateRange": "12m",
+                "exchange": "US",
+                "showChart": true,
+                "locale": "ru",
+                "largeChartUrl": "",
+                "isTransparent": false,
+                "width": "600",
+                "height": "600",
+                "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+                "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+                "gridLineColor": "rgba(42, 46, 57, 1)",
+                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                "symbolActiveColor": "rgba(33, 150, 243, 0.12)"
+            }
+        </script>
+    </div>
+
+
+    <div class="tr3">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+            {
+                "width": 770,
+                "height": 400,
+                "currencies": [
+                "EUR",
+                "USD",
+                "JPY",
+                "GBP",
+                "CHF",
+                "AUD",
+                "CAD",
+                "NZD",
+                "CNY"
+            ],
+                "isTransparent": false,
+                "colorTheme": "dark",
+                "locale": "ru"
+            }
+        </script>
+    </div>
+    <div class="curs">
+        <p id="had" class="hadd">Курс доллара к гривне</p>
+    </div>
+
+
+    <div class="tr4">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/FX_IDC-USDUAH/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+            {
+                "symbol": "FX_IDC:USDUAH",
+                "width": 350,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "locale": "ru"
+            }
+        </script>
+    </div>
+
+
+
+    <div class="tradingview-widget-container">
+
+        <div id="tradingview_f5727"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/FX_IDC-PLNUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "width": 980,
+                    "height": 610,
+                    "symbol": "FX_IDC:PLNUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "ru",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_f5727"
+                }
+            );
+        </script>
+    </div>
+
+
+    <div class="hadd">
+        <p id="curs_val">Курсы валют в реальном времени</p>
+    </div>
+
+
+    <div class="tr5">
+        <div id="tradingview_8783e"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/FX_IDC-EURUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "width": 980,
+                    "height": 610,
+                    "symbol": "FX_IDC:EURUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "ru",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_8783e"
+                }
+            );
+        </script>
+    </div>
+
+
+
+
+
+    <div class="tr6">
+        <div id="tradingview_a7e88"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/FX_IDC-AUDUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "width": 980,
+                    "height": 610,
+                    "symbol": "FX_IDC:AUDUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "ru",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_a7e88"
+                }
+            );
+        </script>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
